@@ -1,13 +1,13 @@
 STEM = icqg2016
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
-$(STEM).pdf: $(STEM).tex header.tex Figs/piecharts.pdf Figs/table_fig.pdf
+$(STEM).pdf: $(STEM).tex header.tex Figs/piecharts.pdf Figs/table_fig.pdf Figs/barchart.pdf
 	xelatex $<
 
 notes: $(STEM)_withnotes.pdf
 all: $(STEM).pdf notes web
 
-$(STEM)_withnotes.pdf: $(STEM)_withnotes.tex header.tex Figs/piecharts.pdf Figs/table_fig.pdf
+$(STEM)_withnotes.pdf: $(STEM)_withnotes.tex header.tex Figs/piecharts.pdf Figs/table_fig.pdf Figs/barchart.pdf
 	xelatex $(STEM)_withnotes
 	pdfnup $(STEM)_withnotes.pdf --nup 1x2 --no-landscape --paper letterpaper --frame true --scale 0.9
 	mv $(STEM)_withnotes-nup.pdf $(STEM)_withnotes.pdf
@@ -23,4 +23,7 @@ Figs/piecharts.pdf: R/pie_charts.R
 	cd R;R $(R_OPTS) -e "source('$(<F)')"
 
 Figs/table_fig.pdf: R/table_fig.R
+	cd R;R $(R_OPTS) -e "source('$(<F)')"
+
+Figs/barchart.pdf: R/barchart.R
 	cd R;R $(R_OPTS) -e "source('$(<F)')"
