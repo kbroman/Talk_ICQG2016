@@ -1,4 +1,4 @@
-\documentclass[12pt,t]{beamer}
+\documentclass[14pt,t]{beamer}
 \usepackage{graphicx}
 \setbeameroption{hide notes}
 \setbeamertemplate{note page}[plain]
@@ -67,6 +67,166 @@
 
 \end{frame}
 
+
+
+
+\begin{frame}[c]{}
+
+  \large \centerline{Moving data around can be a feat}
+
+  \note{
+    Analysis results often considerably bigger than data.
+
+    Saving results to disk can take as long as the calculations
+    themselves.
+
+    I recently said to a collaborator, ``I'll just copy this to a USB
+    stick.'' But it was going to take an hour. Needed to use an
+    ethernet cable instead.
+  }
+
+\end{frame}
+
+
+
+\begin{frame}[c]{}
+
+  \large \centerline{Better data visualizations}
+
+  \note{
+    With big data (and big results), we rely more on data
+    visualizations, and we need to do a better job at this.
+  }
+
+\end{frame}
+
+
+\begin{frame}[c]{Pie charts suck}
+
+  \note{
+    Pie charts are ineffective because humans are terrible at
+    quantifying areas.
+  }
+
+\end{frame}
+
+
+\begin{frame}[c]{Bar charts suck}
+
+  \note{
+    Reducing results to two numbers is almost always bad.
+  }
+
+\end{frame}
+
+\begin{frame}[c]{Tables suck}
+
+  \note{
+    We mostly care about qualitative differences; tables are terrible
+    for that.
+  }
+
+\end{frame}
+
+\begin{frame}[c]{Tools matter}
+
+
+  \bbi
+\item Need better than {\hilit toy} implementations.
+\item No more ``The attached is similar to the code we used.''
+\item We should be working together on common tools.
+  \ei
+
+  \note{
+    Too often, we focus on the methods and write toy software
+    implementation that are sufficient for the methods paper but not
+    for anything else.
+
+    Often we don't provide any software for our new methods. And we
+    may not take sufficient care in ensuring the computational
+    reproducibility of our work.
+
+    And main academic incentives are to make a new tool rather than to
+    contribute to others' tools. Working together on common tools
+    would be more useful for the community.
+    }
+
+\end{frame}
+
+
+
+\begin{frame}[c]{Recognize tool makers}
+
+
+  \bbi
+\item Novelty of methods isn't everything
+\item Need a home for tool makers in academics
+  \ei
+
+  \note{
+    Academics (tenure, grants, awards) rewards novel methods far more
+    than useful software.
+
+    Folks interested in tool development need to devote considerable
+    effort to things they don't care about, or they'll leave for a
+    lucrative data science industry job, where their talents are more
+    strongly rewarded.
+
+    We need to fix this. It's a cultural problem.
+    }
+
+\end{frame}
+
+
+
+\begin{frame}[c]{Training}
+
+
+  \bbi
+\item Statistical/computational methods
+  \bi
+\item \href{https://www.biostat.washington.edu/suminst/sisg}{Summer
+  Institute in Statistical Genetics}
+  \item \href{https://www.jax.org/education-and-learning/education-calendar/2016/october/short-course-on-systems-genetics}{Short Course on Systems Genetics}
+  \ei
+\item Data manipulation and management
+  \bi
+\item \href{http://www.datacarpentry.org/}{\tt datacarpentry.org}
+  \ei
+\item Software engineering
+  \bi
+\item \href{http://software-carpentry.org/}{\tt software-carpentry.org}
+  \ei
+  \ei
+
+  \note{
+    Academics (tenure, grants, awards) rewards novel methods far more
+    than useful software.
+
+    Folks interested in tool development need to devote considerable
+    effort to things they don't care about, or they'll leave for a
+    lucrative data science industry job, where their talents are more
+    strongly rewarded.
+
+    We need to fix this. It's a cultural problem.
+    }
+
+\end{frame}
+
+\begin{frame}[c]{Be Open}
+
+  \bbi
+\item Open data
+\item Open software
+\item Open manuscripts
+  \ei
+
+  \note{
+    Openness of data, software, and manuscripts is better for the
+    community.
+    }
+
+\end{frame}
 
 
 \end{document}
