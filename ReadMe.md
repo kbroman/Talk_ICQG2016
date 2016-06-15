@@ -5,8 +5,8 @@ These are slides for a 10-min intro I gave at the
 on 16 June 2016.
 
 The compiled slides:
-[pdf](https://www.biostat.wisc.edu/~kbroman/presentations/icqg.pdf) |
-[pdf with notes](https://www.biostat.wisc.edu/~kbroman/presentations/icqg_withnotes.pdf)
+[pdf](https://www.biostat.wisc.edu/~kbroman/presentations/icqg2016.pdf) |
+[pdf with notes](https://www.biostat.wisc.edu/~kbroman/presentations/icqg2016_withnotes.pdf)
 
 ---
 
