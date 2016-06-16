@@ -15,8 +15,8 @@ ifile.readlines.each do |z|
     do_1st_sub = false
   end
 
-  if do_2nd_sub and /\\documentclass\[12pt,t\]{beamer}/ =~ z
-    z = z.sub("[12pt,t]", "[12pt,t,handout]")
+  if do_2nd_sub and /\\documentclass\[14pt,t\]{beamer}/ =~ z
+    z = z.sub("[14pt,t]", "[14pt,t,handout]")
     do_2nd_sub = false
   end
 
